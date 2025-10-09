@@ -1,0 +1,117 @@
+/*body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+ background-image: url("gradient.webp"); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}*/
+
+/*.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 440px;x'
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+}*/
+/*
+
+
+h1 {
+  margin: 0 0 16px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #0f172a;
+}
+*/
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(gradient.webp);
+    background-size: cover;
+    background-position: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1); /* opcional, visual bonito */
+    padding: 100px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 50px auto; /* centraliza na tela */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.container { display: flex; flex-direction: column; gap: 2px; }
+
+
+label {
+  font-size: 1rem;       /* aumenta o tamanho da fonte */
+  font-weight: 600;      /* deixa o texto em negrito */
+  color: #0f172a;        /* cor do texto — combina com o título */
+  display: block;        /* faz o label ocupar uma linha inteira */
+  margin-bottom: 6px;    /* dá espaçamento entre o texto e o input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px 12px;
+  border: 1px solid #e6e9ef;
+  border-radius: 8px;
+  font-size: 0.98rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79,70,229,0.08);
+}
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.small { font-size: 0.82rem; color: #6b7280; }
+.error { color: #dc2626; font-size: 0.86rem; min-height: 1.1em; }
+
+.btn {
+  margin-top: 6px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:active { transform: translateY(1px); }
+
+@media (max-width:420px){
+  .row { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+
