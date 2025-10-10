@@ -13,15 +13,15 @@
 
 <body>
     <main class="container">
-        <form action="pagina_inicial.html" method="GET">
+        <form action="site.html" method="GET">
             <h1>Login</h1>
             <div class="input-box">
-                <input placeholder="Usuário" type="email">
+                <input type="email" id="email-usuario" name="email" placeholder="exemplo@exemplo.com" required>
                 <i class="bx bxs-user"></i> <!--boxicons com o codigo bxs-user -->
             </div>
 
             <div class="input-box">
-                <input placeholder="Senha" type="password">
+                <input placeholder="Senha" type="password" required>
                 <i class="bx bxs-lock-alt"></i> <!--boxicons com codigo bxs-lock-alt -->
             </div>
 
@@ -30,13 +30,13 @@
                     <input type="checkbox">
                     Lembrar minha senha
                 </label>
-                <a href="#">Esqueci minha senha</a>
+                <a href="esqueci.html">Esqueci minha senha</a>
             </div>
 
             <button type="submit" class="login">Login</button>
 
             <div class="link-register">
-                <p>Nao tem uma conta? <a href="#">Cadastre-se</a></p>
+                <p>Nao tem uma conta? <a href="teladecadastro.html">Cadastre-se</a></p>
             </div>
         </form>
     </main>
