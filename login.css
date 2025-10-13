@@ -1,28 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { /* mudanca em todo o corpo do login */
+    margin: 0; /* remove a margem padrao */
+    padding: 0; /* remove o padding padrao */
+    box-sizing: border-box; /* padding e bordernao aumentam o tamanho final */
 
-}
+} 
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(gradient.webp);
-    background-size: cover;
-    background-position: center;
+    display: flex; /* habilita o flexbox */
+    justify-content: center; /* centraliza o conteudo do body horizontal */
+    align-items: center; /* centraliza o conteudo do body vertical */
+    min-height: 100vh; /*altura minima da tela em 100% */
+    background: url(gradient.webp); 
+    background-size: cover; /* cover faz a imagem cobrir tooda a area do body */
+    background-position: center; /* centraliza a imagem de fundo */
 }
 
 .container {
-    width: 420px;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
-    color: #fff;
-    padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: 420px; /* largura fixa */
+    background-color: transparent; /*  deixa transparente para funcionar o blur */
+    border: 2px solid rgba(255, 255, 255, .2); /* tamanho da borda e cor */
+    border-radius: 10px; /* arredonda os cantos da borda */
+    color: #fff; /* cor do texto */
+    padding: 30px 40px; /* 30px em cima e baixo, 40 na direita e esquerda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* sombra na borda */
     backdrop-filter: blur(40px);
 
 }
@@ -34,43 +34,43 @@ body {
     position: relative;
     width: 100%;
     height: 50px;
-    margin: 30px 0;
+    margin: 30px 0; /* Espaçamento entre as caixas de input */
 }
 .input-box input {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2); /* Borda arredondada */
+    border-radius: 40px; /* Borda arredondada */
+    outline: none; /* tira a borda azul que aparece ao selecionar */
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
 }
-.input-box input::placeholder {
+.input-box input::placeholder { /* cor do texto do placeholder */
     color: #c5c5c5;
 }
-.input-box i {
-    position: absolute;
+.input-box i { /* posicao dos boxicons */
+    position: absolute; /* posiciona o icone de acordo com o input-box */
     right: 20px;
     top: 25%;
     font-size: 20px;
 }
 .remember-pass {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* deixa o checkbox na esquerda e link na direita */
     margin: -15px 0 15px;
 }
-.remember-pass label input {
+.remember-pass label input { /* cor do checkbox para branco */
     accent-color: #fff;
     margin-right: 5px;
 }
 .remember-pass a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none; /* remove o sublinhado do link */
+    color: #fff; /* cor do link */
 }
-.remember-pass a:hover {
-    text-decoration: underline;
+.remember-pass a:hover { /* quando colocar o mouse em cima fica com underline */
+    text-decoration: underline; 
 }
 .login {
     width: 100%;
@@ -78,9 +78,9 @@ body {
     background-color: #fff;
     border: none;
     border-radius: 40px;
-    cursor: pointer;
+    cursor: pointer; /* indica que é clicavel */
     font-size: 16px;
-    color: #333;
+    color: #333; /* cor do texto */
     font-weight: 600;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     margin-top: 20px;
@@ -94,7 +94,7 @@ body {
 .link-register {
     font-size: 14px;
     text-align: center;
-    margin: 20px 15px;
+    margin: 20px 15px; /* 20px em cima e baixo, 15 na direita e esquerda */
 }
 .link-register a {
     text-decoration: none;

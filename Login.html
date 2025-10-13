@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <main class="container">
-        <form action="site.html" method="GET">
+    <main class="container"> <!-- Conteudo principal -->
+        <form action="site.html" method="GET"> <!-- formulario será enviado para o action quando apertar o botao submit "login", metodo get pois nao tem um servidor, correto seria POST -->
             <h1>Login</h1>
-            <div class="input-box">
-                <input type="email" id="email-usuario" name="email" placeholder="exemplo@exemplo.com" required>
+            <div class="input-box"> <!-- criei uma class input-box para chamar no css -->
+                <input placeholder="exemplo@exemplo.com" type="email" required>
                 <i class="bx bxs-user"></i> <!--boxicons com o codigo bxs-user -->
             </div>
 
@@ -26,14 +26,14 @@
             </div>
 
             <div class="remember-pass">
-                <label>
+                <label> <!-- label usado para o checkbox -->
                     <input type="checkbox">
                     Lembrar minha senha
                 </label>
-                <a href="esqueci.html">Esqueci minha senha</a>
+                <a href="esqueci.html">Esqueci minha senha</a> <!-- link ao lado de lembar senha pois esta no mesmo div -->
             </div>
 
-            <button type="submit" class="login">Login</button>
+            <button type="submit" class="login">Login</button> <!-- button submit de login, onde ira para o link no form -->
 
             <div class="link-register">
                 <p>Nao tem uma conta? <a href="teladecadastro.html">Cadastre-se</a></p>
