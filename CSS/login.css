@@ -2,7 +2,8 @@
     margin: 0; /* remove a margem padrao */
     padding: 0; /* remove o padding padrao */
     box-sizing: border-box; /* padding e bordernao aumentam o tamanho final */
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 } 
 
 body {
