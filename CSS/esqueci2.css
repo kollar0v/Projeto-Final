@@ -2,7 +2,8 @@
     margin: 0; /* remove a margem padrao */
     padding: 0; /* remove o padding padrao */
     box-sizing: border-box; /* padding e bordernao aumentam o tamanho final */
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     justify-content: center; /* centraliza o conteudo do body horizontal */
     align-items: center; /* centraliza o conteudo do body vertical */
     min-height: 100vh; /*altura minima da tela em 100% */
-    background: url(../assets/gradient.webp);
+    background: url(../assets/hexdatas.jpg);
     background-size: cover; /* cover faz a imagem cobrir tooda a area do body */
     background-position: center; /* centraliza a imagem de fundo */
 }
