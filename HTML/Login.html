@@ -16,35 +16,57 @@
 </head>
 
 <body>
-    <main class="container"> <!-- Conteudo principal -->
-        <form action="site.html" method="GET"> <!-- formulario será enviado para o action quando apertar o botao submit "login", metodo get pois nao tem um servidor, correto seria POST -->
-            <h1>Login</h1>
-            <div class="input-box"> <!-- criei uma class input-box para chamar no css -->
-                <input placeholder="exemplo@exemplo.com" type="email" required>
-                <i class="bx bxs-user"></i> <!--boxicons com o codigo bxs-user -->
+    <div class="main-content-wrapper">
+        <main class="container"> <!-- Conteudo principal -->
+            <form action="site.html" method="GET"> <!-- formulario será enviado para o action quando apertar o botao submit "login", metodo get pois nao tem um servidor, correto seria POST -->
+                <h1>Login</h1>
+                <div class="input-box"> <!-- criei uma class input-box para chamar no css -->
+                    <input placeholder="exemplo@exemplo.com" type="email" required>
+                    <i class="bx bxs-user"></i> <!--boxicons com o codigo bxs-user -->
+                </div>
+
+                <div class="input-box">
+                    <input placeholder="Senha" type="password" required>
+                    <i class="bx bxs-lock-alt"></i> <!--boxicons com codigo bxs-lock-alt -->
+                </div>
+
+                <div class="remember-pass">
+                    <label> <!-- label usado para o checkbox -->
+                        <input type="checkbox">
+                        Lembrar minha senha
+                    </label>
+                    <a href="esqueci.html">Esqueci minha senha</a> <!-- link ao lado de lembar senha pois esta no mesmo div -->
+                </div>
+
+                <button type="submit" class="login">Login</button> <!-- button submit de login, onde ira para o link no form -->
+
+                <div class="link-register">
+                    <p>Nao tem uma conta? <a href="teladecadastro.html">Cadastre-se</a></p>
+                </div>
+            </form>
+        </main>
+        <section class="info-section"> <div class="info-grid">
+                <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6" 
+           target="_blank" 
+           class="info-box" 
+           id="thumb1">
+           </a>
+                <a href="https://www.youtube.com/watch?v=vEwPnjqWQ-g&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=1" 
+           target="_blank" 
+           class="info-box" 
+           id="thumb2">
+           </a>
+                <a href="https://www.youtube.com/watch?v=2c7yWlpWDJM&list=PLcoYAcR89n-qbO7YAVj5S0alABLis_QVU&index=1" 
+           target="_blank" 
+           class="info-box" 
+           id="thumb3">
+           </a>
+                <div class="info-box"></div>
+                <div class="info-box"></div>
+                <div class="info-box"></div>
             </div>
-
-            <div class="input-box">
-                <input placeholder="Senha" type="password" required>
-                <i class="bx bxs-lock-alt"></i> <!--boxicons com codigo bxs-lock-alt -->
-            </div>
-
-            <div class="remember-pass">
-                <label> <!-- label usado para o checkbox -->
-                    <input type="checkbox">
-                    Lembrar minha senha
-                </label>
-                <a href="esqueci.html">Esqueci minha senha</a> <!-- link ao lado de lembar senha pois esta no mesmo div -->
-            </div>
-
-            <button type="submit" class="login">Login</button> <!-- button submit de login, onde ira para o link no form -->
-
-            <div class="link-register">
-                <p>Nao tem uma conta? <a href="teladecadastro.html">Cadastre-se</a></p>
-            </div>
-        </form>
-    </main>
-
+        </section>
+    </div>   
 </body>
 
 </html>

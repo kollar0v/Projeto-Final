@@ -15,7 +15,11 @@ body {
     background-size: cover; /* cover faz a imagem cobrir tooda a area do body */
     background-position: center; /* centraliza a imagem de fundo */
 }
-
+.main-content-wrapper {
+    display: flex; /* Habilita o Flexbox */
+    gap: 30px; /* Espaço entre o container de login e a nova seção */
+    align-items: center; /* Centraliza verticalmente o login e a seção de info */
+}
 .container {
     width: 420px; /* largura fixa */
     background-color: transparent; /*  deixa transparente para funcionar o blur */
@@ -104,4 +108,52 @@ body {
 }
 .link-register a:hover {
     text-decoration: underline;
+}
+.info-section {
+    width: 600px; /* Largura ajustável para a seção de informações */
+    color: #fff;
+    padding: 20px;
+    /* Manter o mesmo efeito visual do container de login */
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(40px);
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 15px; 
+}
+
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    height: 120px; /* Altura  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.info-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+#thumb1 {
+    background: url(../assets/img1.avif); 
+    background-size: cover;
+}
+#thumb2 {
+    background: url(../assets/img2.avif); 
+    background-size: cover;
+}
+#thumb3 {
+    background: url(../assets/img3.avif); 
+    background-size: cover;
 }
