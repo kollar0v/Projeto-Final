@@ -1,0 +1,43 @@
+<?php
+
+// Página de confirmação de envio de e-mail/SMS para recuperação de senha
+// Se o controlador definir $mensagem_confirmacao, ela será exibida.
+// Caso contrário, exibimos a mensagem padrão.
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Caminho público do CSS -->
+    <link rel="stylesheet" href="/css/esqueci2.css">
+    <title>E-mail enviado</title>
+</head>
+<body>
+    <main class="container">
+        <section class="confirmacao">
+            <h1>E-mail enviado!</h1>
+
+            <div class="input-box">
+                <?php if (!empty($mensagem_confirmacao)): ?>
+                    <p><?= nl2br(htmlspecialchars($mensagem_confirmacao)) ?></p>
+                <?php else: ?>
+                    <p>
+                        Acabamos de enviar um link de redefinição de senha para o seu e-mail cadastrado.
+                        Por favor, verifique sua caixa de entrada (e a pasta de spam) e clique no link para criar sua nova senha.
+                    </p>
+                <?php endif; ?>
+            </div>
+
+            <div class="acoes">
+                <a href="/login">Voltar ao login</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

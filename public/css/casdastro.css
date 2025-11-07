@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at center, #1c1f1d 0%, #0f100f 100%);
+  color: #e2e2e2;
+}
+
+.cadastro-card {
+  background: rgba(20, 25, 20, 0.9);
+  border: 1px solid #00ff73;
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 115, 0.3);
+  text-align: center;
+}
+
+h2 {
+  color: #00ff73;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #9e9e9e;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  color: #00ff73;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #00ff73;
+  border-radius: 8px;
+  background: #141714;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00ffaa;
+  box-shadow: 0 0 12px rgba(0, 255, 102, 0.4);
+}
+
+.btn-enviar {
+  background: linear-gradient(90deg, #00ff73, #00cc52);
+  color: #0a0a0a;
+  border: none;
+  border-radius: 40px;
+  padding: 0.9rem;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(90deg, #00cc52, #00ff73);
+  box-shadow: 0 0 18px #00ff73;
+}
