@@ -174,4 +174,3 @@ if (route_eq($path, '/esqueci2')) {
 http_response_code(404);
 echo "<h1>404 - Página não encontrada</h1>";
 echo "<p>Request path: " . htmlspecialchars($rawPath) . "</p>";
-//teste//
