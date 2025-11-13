@@ -1,0 +1,17 @@
+
+# Corrige acesso direto ao perfil
+RewriteRule ^perfil$ index.php [L,QSA]
+
+# Ativa o mod_rewrite
+RewriteEngine On
+
+# Caminho base do projeto (ajuste conforme o nome da pasta do seu projeto)
+RewriteBase /Projeto-Final/public/
+
+# Se o arquivo ou diretório requisitado existir, serve direto
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Caso contrário, encaminha tudo para index.php mantendo parâmetros da URL
+RewriteRule ^ index.php [QSA,L]
